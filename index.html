@@ -683,6 +683,7 @@ dialog.privacidade::backdrop{background:rgba(7,25,43,.6);}
         <span class="rotulo">Porta de entrada</span>
         <h2 id="titulo-diag" class="h2">Diagnóstico de Importação</h2>
         <p class="lead">Mapeamento do fluxo atual, identificação de riscos, gargalos, retrabalho e oportunidades de automação, com plano de ação priorizado.</p>
+        <p class="selo-gratis" style="display:inline-flex;align-items:center;gap:8px;margin:4px 0 14px;padding:10px 14px;border-radius:14px;border:1.5px solid currentColor;font-weight:600;font-size:.95rem"><span aria-hidden="true">●</span>Gratuito para as 3 primeiras empresas: 3 processos reais conferidos.</p>
         <ul class="entregas">
           <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Conversa inicial de 30 minutos para entender volume, fornecedores e onde a operação mais trava.</span></li>
           <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Mapa do fluxo da invoice ao CD, com os pontos de retrabalho e risco documental.</span></li>
@@ -829,7 +830,7 @@ dialog.privacidade::backdrop{background:rgba(7,25,43,.6);}
   /* ================= CONFIGURAÇÃO ================= */
   var CONFIG = {
     whatsapp: "5511989770063",
-    mensagemPadrao: "Olá, Douglas. Conheci a Qiura pelo site e gostaria de conversar sobre um diagnóstico da nossa operação de importação.",
+    mensagemPadrao: (/[?&]origem=youtube/i.test(location.search) ? "Olá, Douglas. Vim pelo seu vídeo no YouTube e gostaria do diagnóstico gratuito da nossa operação de importação." : "Olá, Douglas. Conheci a Qiura pelo site e gostaria de conversar sobre um diagnóstico da nossa operação de importação."),
     // Endereço do webhook (n8n, HubSpot, Airtable, Supabase...). Vazio = só abre o WhatsApp.
     webhookUrl: ""
   };
